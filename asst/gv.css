@@ -1,0 +1,18 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width:576px){.p-100{max-width:25%}} /* 540px */
+@media (min-width:768px){.p-100{max-width:50%}} /* 720px */
+@media (min-width:992px){.p-100{max-width:75%}}
+@media (min-width:1200px){.p-100{max-width:100%}}/* 1140px */
+/* this does work but needs fine tuning - yui's shot does get small but well. It kinda worked but still seems to over size on iOS device simulator!  */
+
+/* portrait classes for  */
+.p-100 {/*width: 100%;*/
+/* I had a thought of changing the px to % to see if that might work better since I can't seem to get the img to get any smaller */
+display: block;margin: 3px auto;text-align: center;}
+/* .p-100 doesn't show up in bootstrap .css but d-block does but not really much of other than it's display block. this does work with a single portrait shot but doesn't seem to offer any respostinve classes. */
+/*.w-100{width:100%!important}.h-25{height:25%!important}.h-50{height:50%!important}.h-75{height:75%!important}*/
+
+.navbar-collapse {}
